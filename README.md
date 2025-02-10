@@ -10,9 +10,12 @@
 > 
 > 詳しくは[免責事項](./DISCLAIMER.md)をご確認ください。
 
+
 ## ドキュメント一覧
 
 * [プロダクト開発ガイドライン](./product-development-guidelines.md "プロダクト開発ガイドライン")
+* [PRDテンプレート](./prd-template.md "PRDテンプレート")
+
 
 ## TODOリスト
 
