@@ -18,16 +18,16 @@
 ```mermaid
 quadrantChart
     title 市場ポジショニングマップ
-    x-axis 低価格 --> 高価格
-    y-axis 低品質 --> 高品質
-    quadrant-1 プレミアム市場
-    quadrant-2 オーバープライス市場
-    quadrant-3 エコノミー市場
-    quadrant-4 バリュー市場
-    自社製品: [0.6, 0.7]
-    競合A: [0.8, 0.8]
-    競合B: [0.4, 0.4]
-    競合C: [0.3, 0.6]
+    x-axis "低価格" --> "高価格"
+    y-axis "低品質" --> "高品質"
+    quadrant-1 "プレミアム市場"
+    quadrant-2 "オーバープライス市場"
+    quadrant-3 "エコノミー市場"
+    quadrant-4 "バリュー市場"
+    "自社製品": [0.6, 0.7]
+    "競合A": [0.8, 0.8]
+    "競合B": [0.4, 0.4]
+    "競合C": [0.3, 0.6]
 ```
 
 #### ユーザーのニーズ:
@@ -88,24 +88,25 @@ graph TD
 * 記入例：「プロダクトオーナー：〇〇（氏名）、役割：プロダクトのビジョンと戦略を策定し、…（具体的な責任範囲）…。連絡先：〇〇@example.com」
 
 ```mermaid
-organizational
-    title チーム体制図
-    CEO[プロダクトオーナー]
-    PM[プロジェクトマネージャー]
-    Dev[開発チーム]
-    Des[デザインチーム]
-    QA[品質保証チーム]
-    Mkt[マーケティングチーム]
-    Legal[法務チーム]
-    Sec[セキュリティチーム]
-    
-    CEO --> PM
-    PM --> Dev
-    PM --> Des
-    PM --> QA
-    PM --> Mkt
-    PM --> Legal
-    PM --> Sec
+graph TB
+    A[CEO] --> B[PM]
+    B --> C[Dev]
+    B --> D[Des]
+    B --> E[QA]
+    B --> F[Mkt]
+    B --> G[Legal]
+    B --> H[Sec]
+
+    subgraph チーム体制図
+    [CEO: プロダクトオーナー]
+    [PM: プロジェクトマネージャー]
+    [Dev: 開発チーム]
+    [Des: デザインチーム]
+    [QA: 品質保証チーム]
+    [Mkt: マーケティングチーム]
+    [Legal: 法務チーム]
+    [Sec: セキュリティチーム]
+    end
 ```
 
 ### 1.3 コミュニケーションルール
@@ -176,16 +177,16 @@ graph TB
 ```mermaid
 quadrantChart
     title 課題優先度マトリクス
-    x-axis 低緊急度 --> 高緊急度
-    y-axis 低重要度 --> 高重要度
-    quadrant-1 最優先
-    quadrant-2 計画的に対応
-    quadrant-3 後回し
-    quadrant-4 状況次第
-    課題A: [0.8, 0.9]
-    課題B: [0.3, 0.7]
-    課題C: [0.6, 0.4]
-    課題D: [0.2, 0.2]
+    x-axis "低緊急度" --> "高緊急度"
+    y-axis "低重要度" --> "高重要度"
+    quadrant-1 "最優先"
+    quadrant-2 "計画的に対応"
+    quadrant-3 "後回し"
+    quadrant-4 "状況次第"
+    "課題A": [0.8, 0.9]
+    "課題B": [0.3, 0.7]
+    "課題C": [0.6, 0.4]
+    "課題D": [0.2, 0.2]
 ```
 
 ### 2.2 ビジネスモデル / マーケティング施策
@@ -368,16 +369,16 @@ graph TB
 ```mermaid
 quadrantChart
     title MoSCoW優先度マトリクス
-    x-axis リソース要求 低 --> 高
-    y-axis 重要度 低 --> 高
-    quadrant-1 Must have
-    quadrant-2 Should have
-    quadrant-3 Won't have
-    quadrant-4 Could have
-    機能A: [0.8, 0.9]
-    機能B: [0.4, 0.7]
-    機能C: [0.6, 0.3]
-    機能D: [0.2, 0.2]
+    x-axis "リソース要求 低" --> "リソース要求 高"
+    y-axis "重要度 低" --> "重要度 高"
+    quadrant-1 "Must have"
+    quadrant-2 "Should have"
+    quadrant-3 "Won't have"
+    quadrant-4 "Could have"
+    "機能A": [0.8, 0.9]
+    "機能B": [0.4, 0.7]
+    "機能C": [0.6, 0.3]
+    "機能D": [0.2, 0.2]
 ```
 
 **(その他のフレームワーク: 必要に応じて、ペルソナ、カスタマージャーニーマップ、SWOT分析などのフレームワークを追加)**
@@ -648,16 +649,16 @@ mindmap
 ```mermaid
 quadrantChart
     title リスク評価マトリクス
-    x-axis 発生確率 低 --> 高
-    y-axis 影響度 低 --> 高
-    quadrant-1 重点対応
-    quadrant-2 要注意
-    quadrant-3 要監視
-    quadrant-4 許容範囲
-    技術リスクA: [0.8, 0.9]
-    市場リスクB: [0.6, 0.5]
-    法務リスクC: [0.3, 0.8]
-    セキュリティリスクD: [0.7, 0.7]
+    x-axis "発生確率 低" --> "発生確率 高"
+    y-axis "影響度 低" --> "影響度 高"
+    quadrant-1 "重点対応"
+    quadrant-2 "要注意"
+    quadrant-3 "要監視"
+    quadrant-4 "許容範囲"
+    "技術リスクA": [0.8, 0.9]
+    "市場リスクB": [0.6, 0.5]
+    "法務リスクC": [0.3, 0.8]
+    "セキュリティリスクD": [0.7, 0.7]
 ```
 
 #### 制約事項:
@@ -1796,16 +1797,16 @@ mindmap
 ```mermaid
 quadrantChart
     title SWOT分析
-    x-axis 内部要因 弱み --> 強み
-    y-axis 外部要因 脅威 --> 機会
-    quadrant-1 積極的攻勢
-    quadrant-2 差別化戦略
-    quadrant-3 撤退検討
-    quadrant-4 段階的改善
-    製品強度: [0.7, 0.6]
-    市場成長: [0.8, 0.8]
-    技術力: [0.6, 0.5]
-    競合状況: [0.4, 0.3]
+    x-axis "内部要因 弱み" --> "内部要因 強み"
+    y-axis "外部要因 脅威" --> "外部要因 機会"
+    quadrant-1 "積極的攻勢"
+    quadrant-2 "差別化戦略"
+    quadrant-3 "撤退検討"
+    quadrant-4 "段階的改善"
+    "製品強度": [0.7, 0.6]
+    "市場成長": [0.8, 0.8]
+    "技術力": [0.6, 0.5]
+    "競合状況": [0.4, 0.3]
 ```
 
 ```mermaid
